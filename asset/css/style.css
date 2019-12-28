@@ -116,20 +116,22 @@ section{
     padding:100px 0;
     position:relative
 }
+
 .grayColor{
     color:#aab3c2;
 }
 .imgContainer{
         width: 35%;
-       overflow: hidden;
-        position: absolute;
-        left:0;
-        top:120px;
+float:left;
+background-image: url("../img/2-2.png");
+background-size: cover;
+background-repeat: no-repeat;
+
+padding-top:72px;
 }
 .heroImg{
-    position: absolute;
-    z-index: 111;
-    top: 79px;
+    text-align: left;
+
 
 }.circleBlue{
     position: absolute;
@@ -529,7 +531,8 @@ section{
     font-size: 12px;
 }
 .copyRightSocial{
-    text-align:center;
+    text-align:right;
+    margin-top:10px;
 }
 .serviceDetails{
 margin-bottom:50px;
@@ -550,10 +553,84 @@ footer{
     text-align: center;
     margin-top: 20px;
 }
-.navbar-light .navbar-toggler {
-    border-color: #007bff;
-    position: absolute;
-    left: -6px;
-    top: 7px;
+.navbar{
+    float:left
 }
+}
+@media(min-width:767px) and (max-width:1024px){
+    .heroCont h2{
+        font-size:30px;
+    }
+    .imgContainer{
+        display: none;
+    }
+    .services{
+        padding-top:50px;
+    }
+    section{
+        padding:20px 0;
+    }
+    .serviceList li{
+        margin-bottom:5px;
+        padding:0 20px
+    }
+    .serviceList li p {
+font-size:15px;
+    }.serviceList  h6{
+font-size:22px;
+    }
+    .ServiceImgLaptop{
+        display:none;
+    }
+    .counter .CountCont{
+padding:50px 20px;
+    }
+    .clientDesc{
+        width:60%;
+        float:right;
+        margin-top:20px;
+    }
+    .CImg {
+        width:35%
+    }
+    .clientDesc h2 {
+        font-size: 33px;
+    }
+    .clientDesc h3 {
+        font-size: 20px;}
+    
+    .askBtn {
+        padding: 7px 15px;
+   
+   font-size: 13px; }
+   .navbar-light .navbar-toggler{
+       display:none !important;
+   }
+   .nav-item{
+       display: inline-block;
+
+   }
+   .nav-link {
+    font-size: 14px;
+    padding: 0 13px !important;}
+
+   .collapse.navbar-collapse{
+       display: block !important;
+   }
+   .navbar-nav{
+       display: inline-block;
+   }
+   .logo img{
+       width:90%;
+   }
+   footer{
+    background-image: linear-gradient(83deg, #66ddff  10%, #6e72ff 87%);
+    padding-top:50px;
+    border-radius: 50% 70% 20% 50%;
+  
+  }
+   footer .form-control::placeholder{
+color:white;
+  }
+
 }
