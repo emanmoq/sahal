@@ -39,6 +39,9 @@ header{
 .logo{
   width:  120px;
 }
+.navbar {
+   margin:0 auto;
+}
 
 .nav-link{
     font-size:18px;
@@ -72,6 +75,7 @@ right: 50%;
         font-size:14px;
         text-align: center;
         display: block;
+        float: left;
     }
     .askBtn:hover{
         color:white
@@ -126,7 +130,9 @@ float:left;
 background-image: url("../img/2-2.png");
 background-size: cover;
 background-repeat: no-repeat;
-
+left: 0;
+    top: 0;
+position: absolute;
 padding-top:72px;
 }
 .heroImg{
@@ -327,6 +333,7 @@ margin-bottom:25px;
     color:white;
     width:100%;
     border-radius: 20px;
+
 }
 footer{
 
@@ -468,6 +475,19 @@ font-size:16px;
     body{
         font-size:13px;
     }
+
+.navbar {
+    margin:0;
+    float: left;
+}
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+.ask{
+    width:100%;
+}
+.askBtn{width:100%}
     .nav-link::before,.verticalSocial,.imgContainer,.choiceImg {
         display:none;
     }
@@ -552,9 +572,35 @@ footer{
     display: block;
     text-align: center;
     margin-top: 20px;
+
 }
-.navbar{
-    float:left
+
+
+button.navbar-toggler {
+    position: relative;
+    background: #0991d2;
+    border: none;
+    width: 40px;
+    height: 40px;
+    text-indent: -900em;
+    cursor: pointer;
+    border-radius: 0;
+    opacity: .7;
+}
+button.navbar-toggler:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: #fff;
+    top: 12px;
+    left: 0;
+    right: 0px;
+    margin: auto;
+    box-shadow: 0 7px 0 #fff, 0 14px 0 #fff;
+}
+header{
+    height: auto;
 }
 }
 @media(min-width:767px) and (max-width:1024px){
@@ -626,7 +672,6 @@ padding:50px 20px;
    footer{
     background-image: linear-gradient(83deg, #66ddff  10%, #6e72ff 87%);
     padding-top:50px;
-    border-radius: 50% 70% 20% 50%;
   
   }
    footer .form-control::placeholder{
