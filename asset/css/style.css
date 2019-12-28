@@ -135,6 +135,7 @@ left: 0;
 position: absolute;
 padding-top:72px;
 }
+
 .heroImg{
     text-align: left;
 
@@ -165,7 +166,12 @@ p{
 }
 .serviceImg{
     height:100%;
-    display:table
+    display:table;
+    transition: .5s;
+}
+.serviceImg:hover{
+    transform: scale(1.1);
+    transition: .4s;
 }
 .ServiceImgLaptop{
     background-image:url("../img/clientMask.png");
@@ -177,10 +183,18 @@ p{
     vertical-align: middle;
     display: table-cell;
 }
+.serviceCont{
+    overflow: hidden;
+}
 .serviceCont.halfService img{
     height: 50%;
 }.serviceCont img{
-    height:100%
+    height:100%;
+    transition: .5s;
+}
+.serviceCont img:hover{
+    transform: scale(1.2);
+    transition: .5s;
 }
 .serviceList li{
     padding:5px 20px;
@@ -199,6 +213,15 @@ p{
 .serviceList li p{
 font-size :1.1vw;
 margin-bottom:0;
+}
+.PartnerSliderItem{
+    transition: .4s;
+    overflow: hidden;
+}
+.PartnerSliderItem:hover{
+transform: scale(1.1);
+transition: .4s;
+
 }
 .choice{
     background:url("../img/bg.png") no-repeat center;
@@ -435,8 +458,11 @@ display:inline-block;
     background-size:contain;
     padding:80px 50px;
     background-repeat: no-repeat;
-    float:right;
-
+    transition: .5s;
+}
+.CImg:hover{
+    transform:scale(1.1);
+    transition:.5s;
 }
 .clientSlider{
     display: table;
@@ -533,7 +559,7 @@ section{
     font-size: 31px;
 }
 .sectionSmallTitle {
-    font-size: 16px;
+    font-size: 1.4vw;
 }
 .CImg{
     padding: 20px;
