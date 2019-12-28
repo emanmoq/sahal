@@ -110,7 +110,7 @@ right: 50%;
 }
 
 .heroCont h2{
-    font-size:60px;
+    font-size:4.1vw;
     color:black;
 }
 .heroCont h2 span{
@@ -125,8 +125,8 @@ section{
     color:#aab3c2;
 }
 .imgContainer{
-        width: 35%;
-float:left;
+        width: 30%;
+
 background-image: url("../img/2-2.png");
 background-size: cover;
 background-repeat: no-repeat;
@@ -155,31 +155,38 @@ p{
     width:95%
 }
 .services{
-    padding:200px 0;
+    padding:250px 0;
 }
 .sectionTitle{
-    font-size:45px;
+    font-size:4.1vw;
 }
 .ServiceBG{
     position: absolute;
+}
+.serviceImg{
+    height:100%;
+    display:table
 }
 .ServiceImgLaptop{
     background-image:url("../img/clientMask.png");
     background-size:contain;
   width:100%;
     background-repeat: no-repeat;
-    padding:40px;
+   
     background-position: center center;
+    vertical-align: middle;
+    display: table-cell;
 }
-.ServiceImgLaptop img{
-
+.serviceCont.halfService img{
+    height: 50%;
+}.serviceCont img{
+    height:100%
 }
 .serviceList li{
-    margin-bottom:25px;
-    padding:15px 40px;
+    padding:5px 20px;
 }
 .serviceList li h6{
-    font-size:30px;
+    font-size:2vw;
 }
 .serviceDetails{
     margin-bottom:130px;
@@ -190,7 +197,8 @@ p{
     background-color: #ffffff;
 }
 .serviceList li p{
-font-size:18px;
+font-size :1.1vw;
+margin-bottom:0;
 }
 .choice{
     background:url("../img/bg.png") no-repeat center;
@@ -491,9 +499,7 @@ font-size:16px;
     .nav-link::before,.verticalSocial,.imgContainer,.choiceImg {
         display:none;
     }
-.heroCont h2 {
-font-size: 30px;
-}
+
 section{
     padding:15px 0;
 }
@@ -602,6 +608,9 @@ button.navbar-toggler:after {
 header{
     height: auto;
 }
+.scrollNav{
+    height:auto
+}
 }
 @media(min-width:767px) and (max-width:1024px){
     .heroCont h2{
@@ -627,6 +636,7 @@ font-size:22px;
     }
     .ServiceImgLaptop{
         display:none;
+
     }
     .counter .CountCont{
 padding:50px 20px;
