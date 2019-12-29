@@ -22,11 +22,7 @@ $(document).ready(function () {
       
         });  
 });
-$('select').selectric({
-  disableOnMobile: false,
-  dir: "rtl"
-  
-});
+
 $('.clientSlider').owlCarousel({
   loop:true,
   margin:10,
