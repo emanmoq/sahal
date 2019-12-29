@@ -348,25 +348,6 @@ margin-bottom:25px;
 select{
     position: relative;
 }
-select:after {
-    content: '<>';
-    font: 17px "Consolas", monospace;
-    color: #333;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    right: 11px;
-    /*Adjust for position however you want*/
-    
-    top: 18px;
-    padding: 0 0 2px;
-    border-bottom: 1px solid #999;
-    /*left line */
-    
-    position: absolute;
-    pointer-events: none;
-  }
   
 select::-ms-expand{
     display:none;
@@ -536,6 +517,10 @@ font-size:16px;
     }
 }
 @media(min-width:360px)and (max-width:767px){
+    .wow{
+        animation-name: none !important;
+        visibility: visible !important;
+    }
     body{
         font-size:13px;
     }
@@ -543,10 +528,12 @@ font-size:16px;
 .navbar {
     margin:0;
     float: left;
+    width:100%;
 }
 .navbar-nav {
     width: 100%;
     text-align: center;
+    margin: 20px 0;
 }
 .ask{
     width:100%;
