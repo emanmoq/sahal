@@ -92,11 +92,11 @@ $(window).scroll(function () {
       return false;
     });
     $(".navbar-toggler").click(function(){
-$(".navbar-collapse").animate({left:"0"},"slow");
+$(".navbar-collapse").collapse("show");
     })   
 
     $(".close").click(function(){
-        $(".navbar-collapse").css("display","none")})
+      $('.navbar-collapse').collapse("hide")})
    
     
 });

@@ -519,6 +519,7 @@ font-size:16px;
 position: absolute;
 background-color:white;
 top:0;
+left:0;
 width: 100%;
 z-index: 33333;
   box-shadow: 0 0 34px 0 rgba(209, 209, 209, 0.5);
